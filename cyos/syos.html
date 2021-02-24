@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <div>
+            <h1>Choose Your Own Story</h1>
+            <h3>{{.Title}}</h3>
+            <div style="border: solid; border-color: black;">
+                <p>{{range $text := .Story}} {{$text}} {{end}}</p>
+            </div>
+            <div {{range $option := .Options}}>
+                <a href="/{{$option.Arc}}">{{$option.Text}}</a>
+            </div {{end}}>
+            
+        </div>
+        <br>
+    </body>
+</html>
