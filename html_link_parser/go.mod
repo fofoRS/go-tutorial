@@ -1,4 +1,4 @@
-module github.com/go-tutorial/parse
+module github.com/fofoRS/go-tutorial/parse
 
 go 1.15
 
