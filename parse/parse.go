@@ -8,8 +8,8 @@ import (
 )
 
 type Link struct {
-	href string
-	text string
+	Href string
+	Text string
 }
 
 func Parse(r io.Reader) ([]Link, error) {
@@ -27,12 +27,12 @@ func iterateHTMLNodes(htmlNode html.Node, links []Link) []Link {
 		link := Link{}
 		for _, attribute := range htmlNode.Attr {
 			if attribute.Key == "href" {
-				link.href = attribute.Val
+				link.Href = attribute.Val
 			}
 		}
 		var textBuilder strings.Builder
 		buildLinkText(&htmlNode, &textBuilder)
-		link.text = strings.TrimSpace(textBuilder.String())
+		link.Text = strings.TrimSpace(textBuilder.String())
 		links = append(links, link)
 	}
 	for node := htmlNode.FirstChild; node != nil; node = node.NextSibling {
