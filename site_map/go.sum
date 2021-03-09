@@ -1,0 +1,10 @@
+github.com/fofoRS/go-tutorial/parse v0.0.0-20210302162824-b2a2d0592372 h1:mLTvYbc7WbGLN8vAfvAVqXGS6o7YCdIhl9LsZ6lK43Q=
+github.com/fofoRS/go-tutorial/parse v0.0.0-20210302162824-b2a2d0592372/go.mod h1:i+TCkOLEaBwkMl09YkN5WvxTGzIf8VACUjfYcslGpSE=
+github.com/fofoRS/go-tutorial/parse v0.0.0-20210306043114-9b03b70918c2 h1:+YIlhSJLAtSA8hcCUJXVpx4X+8uVSVnV6cHB1MwAv/I=
+github.com/fofoRS/go-tutorial/parse v0.0.0-20210306043114-9b03b70918c2/go.mod h1:i+TCkOLEaBwkMl09YkN5WvxTGzIf8VACUjfYcslGpSE=
+golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 h1:qWPm9rbaAMKs8Bq/9LRpbMqxWRVUAQwMI9fVrssnTfw=
+golang.org/x/net v0.0.0-20210226172049-e18ecbb05110/go.mod h1:m0MpNAwzfU5UDzcl9v0D8zg8gWTRqZa9RBIspLL5mdg=
+golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
+golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
+golang.org/x/text v0.3.3/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
+golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=

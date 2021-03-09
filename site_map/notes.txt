@@ -1,0 +1,15 @@
+site map  utility line command application
+
+1 - what will the library user receive as outcome
+2 - what will the library receive as arguments
+3 - will the library expose a single entry point function
+
+
+soluction strategy
+
+1 - take the targe site url are command line paramenter
+2 - get the root html page from the site, call the site using a http call
+3 - parse html page and gets the links for that page
+4 - normalized the link, checking if the links belong to the same requested domain, for relative paths add the domain
+5 - checks if the link obtained, already exists in the site map if so discard them
+6 - iterated over each link and get the html page for that page using a http call (go execute step 3 to 6)
