@@ -21,7 +21,6 @@ func NewConnection() DbClient {
 
 		db, err := bolt.Open(homeDir+"/bolt_db/TODO.db", 0666, nil)
 		if err != nil {
-			err.Error()
 			panic(err)
 		}
 		err = db.Update(func(tx *bolt.Tx) error {
@@ -30,7 +29,6 @@ func NewConnection() DbClient {
 		})
 
 		if err != nil {
-			err.Error()
 			panic(err)
 		}
 		dbClientSingletionInstance = &DbClient{db}
