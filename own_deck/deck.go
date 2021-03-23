@@ -1,9 +1,5 @@
 package own_deck
 
-import (
-	"math/rand"
-)
-
 type Card struct {
 	name   CardName
 	family CardFamily
@@ -49,11 +45,11 @@ const (
 
 func New() []Card {
 	deck := make([]Card, 52)
-	cardFamilies := rand.Perm(4)
-	cardNames := rand.Perm(14)
-	for _, family := range cardFamilies {
-		for _, name := range cardNames {
-			card := Card{family: CardFamily(family), name: CardName(name)}
+	// cardFamilies := rand.Perm(4)
+	// cardNames := rand.Perm(14)
+	for i := 0; i < 4; i++ {
+		for j := 0; j < 14; i++ {
+			card := Card{family: CardFamily(i), name: CardName(j)}
 			deck = append(deck, card)
 		}
 	}
