@@ -48,7 +48,7 @@ func New() []Card {
 	// cardFamilies := rand.Perm(4)
 	// cardNames := rand.Perm(14)
 	for i := 0; i < 4; i++ {
-		for j := 0; j < 14; i++ {
+		for j := 0; j < 14; j++ {
 			card := Card{family: CardFamily(i), name: CardName(j)}
 			deck = append(deck, card)
 		}
