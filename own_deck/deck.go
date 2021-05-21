@@ -1,9 +1,9 @@
 package own_deck
 
 type Card struct {
-	name   CardName
-	family CardFamily
-	score  int
+	Name   CardName
+	Family CardFamily
+	Score  int
 }
 
 //go:generate stringer -type=CardName
@@ -20,20 +20,20 @@ const (
 )
 
 const (
-	A     CardName = iota
-	One   CardName = iota
-	Two   CardName = iota
-	Three CardName = iota
-	Four  CardName = iota
-	Five  CardName = iota
-	Six   CardName = iota
-	Seven CardName = iota
-	Eight CardName = iota
-	Nine  CardName = iota
-	Ten   CardName = iota
-	J     CardName = iota
-	Q     CardName = iota
-	K     CardName = iota
+	_ CardName = iota
+	A
+	Two
+	Three
+	Four
+	Five
+	Six
+	Seven
+	Eight
+	Nine
+	Ten
+	J
+	Q
+	K
 )
 
 // categorias
@@ -44,12 +44,12 @@ const (
 //A:spades, 1:spades, 2:spades ... A diamons
 
 func New() []Card {
-	deck := make([]Card, 52)
+	deck := make([]Card, 0)
 	// cardFamilies := rand.Perm(4)
 	// cardNames := rand.Perm(14)
 	for i := 0; i < 4; i++ {
 		for j := 0; j < 14; j++ {
-			card := Card{family: CardFamily(i), name: CardName(j)}
+			card := Card{Family: CardFamily(i), Name: CardName(j)}
 			deck = append(deck, card)
 		}
 	}
